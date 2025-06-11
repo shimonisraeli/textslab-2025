@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בין המילים - טקסטים מחוללי משמעות | ד"ר שמעון ישראלי</title>
+    
+    <!-- Open Graph Meta Tags for WhatsApp & Social Media -->
+    <meta property="og:title" content="בין המילים - טקסטים מחוללי משמעות">
+    <meta property="og:description" content="ד״ר שמעון ישראלי | השתלמויות, סדנאות וביבליותרפיה • מרחבי שיח ולימוד">
+    <meta property="og:image" content="https://i.imgur.com/daQftos.png">
+    <meta property="og:url" content="https://shimonisraeli.github.io/newsletter">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ד״ר שמעון ישראלי - בין המילים">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="בין המילים - טקסטים מחוללי משמעות">
+    <meta name="twitter:description" content="ד״ר שמעון ישראלי | השתלמויות, סדנאות וביבליותרפיה • מרחבי שיח ולימוד">
+    <meta name="twitter:image" content="https://i.imgur.com/daQftos.png">
+    
+    <!-- WhatsApp specific -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="he_IL">
+    
+    <!-- General Meta Tags -->
+    <meta name="description" content="ד״ר שמעון ישראלי מציע השתלמויות, סדנאות וביבליותרפיה. מרחבי שיח ולימוד.">
+    <meta name="keywords" content="שמעון ישראלי, טקסטים, ביבליותרפיה, השתלמויות, סדנאות, בית מדרש, הגות ציונית">
+    <meta name="author" content="ד״ר שמעון ישראלי">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Noto Sans Hebrew', sans-serif;
+            background: linear-gradient(135deg, #f9f6f2 0%, #f2ebe4 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 40px 120px rgba(139, 105, 81, 0.5);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid rgba(212, 165, 116, 0.3);
+        }
+        
+        .header-strip {
+            height: 12px;
+            background: linear-gradient(90deg, #d4a574 0%, #c19660 20%, #b08752 40%, #a67c5a 60%, #8b6951 80%, #7a5a46 100%);
+            box-shadow: 0 2px 10px rgba(139, 105, 81, 0.3);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 40px 50px;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.15) 0%, 
+                rgba(193, 150, 96, 0.20) 50%, 
+                rgba(176, 135, 82, 0.15) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212, 165, 116, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(193, 150, 96, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .main-title {
+            font-size: 4.2em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #7a5a46 0%, #8b6951 50%, #a67c5a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            text-shadow: 
+                0 8px 25px rgba(139, 105, 81, 0.5),
+                0 4px 12px rgba(122, 90, 70, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 2.4em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #8b6951 0%, #a67c5a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 35px;
+            text-shadow: 
+                0 5px 15px rgba(166, 124, 90, 0.3),
+                0 2px 6px rgba(139, 105, 81, 0.4);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .intro-text {
+            font-size: 1.25em;
+            line-height: 1.65;
+            color: #2d241e;
+            font-weight: 700;
+            background: linear-gradient(135deg, #faf8f5 0%, #f4ede6 50%, #f0e7db 100%);
+            padding: 35px 40px;
+            border-radius: 18px;
+            border-right: 8px solid #c19660;
+            text-align: justify;
+            box-shadow: 
+                0 15px 50px rgba(139, 105, 81, 0.25),
+                0 5px 20px rgba(139, 105, 81, 0.15),
+                inset 0 2px 0 rgba(255, 255, 255, 0.9);
+            border: 3px solid rgba(212, 165, 116, 0.3);
+            max-width: 95%;
+            margin: 0 auto 50px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .intro-text::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(135deg, #d4a574, #c19660, #b08752);
+            border-radius: 21px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        .navigation {
+            background: linear-gradient(135deg, #8b6951 0%, #a67c5a 50%, #b08752 100%);
+            padding: 30px 40px;
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 
+                0 4px 25px rgba(139, 105, 81, 0.4),
+                0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f5f1 100%);
+            color: #7a5a46;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            padding: 18px 28px;
+            border-radius: 50px;
+            font-family: 'Noto Sans Hebrew', sans-serif;
+            font-size: 1.05em;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 12px 35px rgba(0, 0, 0, 0.2),
+                0 6px 15px rgba(139, 105, 81, 0.15),
+                inset 0 2px 0 rgba(255, 255, 255, 0.9);
+            position: relative;
+            overflow: hidden;
+            text-transform: none;
+            letter-spacing: 0.6px;
+            text-shadow: 0 1px 2px rgba(122, 90, 70, 0.1);
+            white-space: nowrap;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+        
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.8), 
+                transparent);
+            transition: left 0.8s ease;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-6px) scale(1.08);
+            box-shadow: 
+                0 20px 50px rgba(139, 105, 81, 0.5),
+                0 10px 25px rgba(139, 105, 81, 0.3),
+                inset 0 2px 0 rgba(255, 255, 255, 1);
+            background: linear-gradient(135deg, #ffffff 0%, #fdfcf8 100%);
+            border-color: rgba(255, 255, 255, 1);
+        }
+        
+        .nav-btn:hover::before {
+            left: 100%;
+        }
+        
+        .nav-btn.active {
+            background: linear-gradient(135deg, #d4a574 0%, #c19660 100%);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 
+                0 15px 45px rgba(139, 105, 81, 0.7),
+                0 8px 20px rgba(139, 105, 81, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content {
+            padding: 40px 40px 25px;
+            background: white;
+        }
+        
+        .section {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #7a5a46 0%, #8b6951 70%, #a67c5a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            padding-bottom: 18px;
+            border-bottom: 4px solid #a67c5a;
+            display: inline-block;
+            position: relative;
+            text-shadow: 0 3px 12px rgba(139, 105, 81, 0.25);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: 0;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4a574 0%, #8b6951 100%);
+            border-radius: 2px;
+            box-shadow: 0 2px 6px rgba(139, 105, 81, 0.4);
+        }
+        
+        .about-me {
+            background: linear-gradient(135deg, #faf8f5 0%, #f6f2ee 100%);
+            border-radius: 15px;
+            padding: 30px;
+            border-right: 6px solid #a67c5a;
+            box-shadow: 0 8px 30px rgba(139, 105, 81, 0.15);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 5px solid #d4a574;
+            box-shadow: 
+                0 15px 40px rgba(139, 105, 81, 0.3),
+                0 8px 20px rgba(139, 105, 81, 0.2),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+            flex-shrink: 0;
+            position: relative;
+        }
+        
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.4) 0%, 
+                rgba(193, 150, 96, 0.3) 50%, 
+                rgba(176, 135, 82, 0.4) 100%);
+            z-index: -1;
+        }
+        
+        .about-text {
+            flex: 1;
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #3a2e26;
+            text-align: justify;
+            font-weight: 500;
+        }
+        
+        .section-text {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #3a2e26;
+            text-align: justify;
+            font-weight: 500;
+            background: linear-gradient(135deg, #faf8f5 0%, #f6f2ee 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border-right: 6px solid #b08752;
+            box-shadow: 0 8px 30px rgba(139, 105, 81, 0.15);
+        }
+        
+        .services {
+            background: linear-gradient(135deg, #fdfcf8 0%, #f5f0e8 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 8px 30px rgba(139, 105, 81, 0.1);
+        }
+        
+        .service-item {
+            margin-bottom: 25px;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(139, 105, 81, 0.12);
+            border-right: 5px solid #a67c5a;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, #d4a574 0%, #8b6951 100%);
+        }
+        
+        .service-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(139, 105, 81, 0.2);
+        }
+        
+        .service-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #8b6951;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .service-subtitle {
+            font-size: 1.1em;
+            color: #a67c5a;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .service-description {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #3a2e26;
+            text-align: justify;
+            font-weight: 500;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #8b6951 0%, #a67c5a 50%, #b08752 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin: 50px -40px 0;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                transparent 30%, 
+                rgba(255, 255, 255, 0.08) 50%, 
+                transparent 70%);
+            pointer-events: none;
+        }
+        
+        .contact-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255, 255, 255, 0.4) 50%, 
+                transparent 100%);
+        }
+        
+        .contact-title {
+            font-size: 1.8em;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 
+                0 3px 10px rgba(0,0,0,0.4),
+                0 1px 3px rgba(0,0,0,0.3);
+            display: block;
+        }
+        
+        .contact-info-text {
+            font-size: 1.1em;
+            line-height: 1.4;
+            display: block;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-divider {
+            color: #d4a574;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+        
+        /* תיקון יישור טקסט - לשני הכיוונים בלי רווחים מוזרים */
+        .justified-text {
+            text-align: justify;
+            text-align-last: right;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            word-spacing: normal;
+            text-justify: auto;
+        }
+        
+        /* תיקון ספציפי לנייד - יישור לשני הצדדים */
+        @media (max-width: 768px) {
+            .justified-text {
+                text-align: justify;
+                text-align-last: right;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                word-spacing: normal;
+                text-justify: auto;
+                direction: rtl;
+            }
+        
+        /* התאמה מלאה לנייד */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                margin: 0;
+                border-radius: 15px;
+            }
+            
+            .main-title {
+                font-size: 2.8em;
+                line-height: 1.1;
+                margin-bottom: 15px;
+                letter-spacing: -1px;
+            }
+            
+            .subtitle {
+                font-size: 1.6em;
+                line-height: 1.2;
+                margin-bottom: 25px;
+            }
+            
+            .intro-text {
+                font-size: 1.05em;
+                padding: 25px 20px;
+                line-height: 1.6;
+                text-align: right;
+                margin-bottom: 30px;
+                word-spacing: normal;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+            
+            .navigation {
+                padding: 20px 15px;
+            }
+            
+            /* כפתורי ניווט בנייד - רספונסיבי */
+            .nav-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+                align-items: stretch;
+            }
+            
+            .nav-btn {
+                padding: 15px 12px;
+                font-size: 0.95em;
+                font-weight: 700;
+                text-align: center;
+                white-space: normal;
+                line-height: 1.3;
+                width: 100%;
+                min-height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .about-me {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px 20px;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .about-text {
+                text-align: right;
+                line-height: 1.6;
+                word-spacing: normal;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+            
+            .content, .hero {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            
+            .section-title {
+                font-size: 2.2em;
+                line-height: 1.2;
+            }
+            
+            .section-text {
+                padding: 25px 20px;
+                line-height: 1.6;
+                text-align: right;
+                font-size: 1.02em;
+                word-spacing: normal;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+            
+            .services {
+                padding: 25px 20px;
+            }
+            
+            .service-item {
+                padding: 20px 18px;
+                margin-bottom: 20px;
+            }
+            
+            .service-title {
+                font-size: 1.3em;
+                line-height: 1.3;
+                text-align: right;
+            }
+            
+            .service-subtitle {
+                font-size: 1.05em;
+                line-height: 1.3;
+                text-align: right;
+            }
+            
+            .service-description {
+                font-size: 0.98em;
+                line-height: 1.6;
+                text-align: right;
+                word-spacing: normal;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+            
+            .contact-section {
+                padding: 25px 20px;
+                margin: 30px -20px 0;
+            }
+            
+            .contact-title {
+                font-size: 1.6em;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            
+            /* תיקון פרטי קשר בנייד - 3 שורות */
+            .contact-info-text {
+                font-size: 1em;
+                line-height: 1.6;
+                text-align: center;
+                display: block;
+            }
+            
+            .contact-phone {
+                display: block;
+                margin-bottom: 8px;
+            }
+            
+            .contact-email {
+                display: block;
+                margin-bottom: 8px;
+            }
+            
+            .contact-location {
+                display: block;
+            }
+            
+            .contact-divider {
+                display: none;
+            }
+        }
+        
+        /* התאמה למסכים בינוניים */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .nav-buttons {
+                gap: 12px;
+            }
+            
+            .nav-btn {
+                padding: 16px 24px;
+                font-size: 1em;
+            }
+        }
+        
+        /* התאמה למסכים גדולים */
+        @media (min-width: 1025px) {
+            .contact-info-text {
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-strip"></div>
+        
+        <div class="hero">
+            <div class="main-title">בין המילים</div>
+            <div class="subtitle">טקסטים מחוללי משמעות</div>
+            <div class="intro-text justified-text">
+                טקסטים הם יותר מאשר מקורות ידע. בכוחם לעורר הבנה עצמית עמוקה, לייצר דיאלוג אמיתי ולהעניק חוסן ומשמעות לאדם ולקהילה. בעבודתי אני יוצר מרחבי שיח ולימוד בית מדרשיים שבהם טקסטים יהודיים וישראליים מזינים תהליכי צמיחה והתחדשות מתוך עיסוק בשאלות הנוגעות לחיינו
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <div class="nav-buttons">
+                <button class="nav-btn active" onclick="scrollToSection('about-me', this)">מי אני?</button>
+                <button class="nav-btn" onclick="scrollToSection('why-texts', this)">למה טקסטים?</button>
+                <button class="nav-btn" onclick="scrollToSection('services', this)">מה אני מציע?</button>
+                <button class="nav-btn" onclick="scrollToSection('contact', this)">פרטי קשר</button>
+            </div>
+        </nav>
+
+        <div class="content">
+            <section id="about-me" class="section visible">
+                <h2 class="section-title">מי אני?</h2>
+                <div class="about-me">
+                    <img src="https://i.imgur.com/CrIiln7.jpg" alt="ד״ר שמעון ישראלי" class="profile-image">
+                    <div class="about-text justified-text">
+                        ד"ר שמעון ישראלי, היסטוריון וחוקר הגות ציונית. במסגרת המחקר שלי אני עוסק בתפקידם של טקסטים בעיצוב תרבות וזהות קהילתית. שימשתי במשך עשור כר"מ בישיבת ההסדר בנתיבות והשתלמתי בביבליותרפיה, בתיאוריית U ובפסיכולוגיה יהודית במכון רוטנברג. כיום אני חוקר עמית במרכז עזריאלי ללימודי ישראל בשדה בוקר, מעביר קורסים במוסדות אקדמיים ומנחה בתי מדרש וסדנאות. כחלק מהשילוב בין הרקע התורני, האקדמי והמקצועי שלי פיתחתי גישה לעבודה טרנספורמטיבית עם טקסטים.
+                    </div>
+                </div>
+            </section>
+
+            <section id="why-texts" class="section">
+                <h2 class="section-title">למה טקסטים?</h2>
+                <div class="section-text justified-text">
+                    בתקופה של זהויות מעורערות, קיטוב חברתי ומציאות רווית משברים, אנחנו זקוקים למקורות חוסן, עוגנים זהותיים וכלים לריפוי ורענון. הטקסטים שאנחנו פוגשים מעצבים את הסיפור - מי אנחנו, מאין באנו, ולאן אנחנו הולכים. הטקסט יוצר הזדמנות למפגש אמיתי עם עצמנו, עם אחרים, ועם רעיונות שגדולים מאיתנו. הוא מעניק יציבות ובו זמנית מאפשר צמיחה והתחדשות. כשאדם נפגש עם הטקסט באופן פתוח, הטקסט פועל כמיילד – הוא מסייע להעלות תובנות חדשות על עצמו ועל סביבתו. כשאנשים נפגשים סביב הטקסט הם מבינים טוב יותר את עצמם וזה את זה. במרחב הקבוצתי, הטקסט הופך למנוע של דיאלוג אמיתי ולבניית משמעות משותפת.
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2 class="section-title">מה אני מציע?</h2>
+                <div class="services">
+                    <div class="service-item">
+                        <div class="service-title">בית מדרש בשיטת הצמצום</div>
+                        <div class="service-subtitle">השתלמות לרמי"ם ומנחי בתי מדרש</div>
+                        <div class="service-description justified-text">
+                            השתלמות המבוססת על שיטת הצמצום של מכון רוטנברג, המציעה כלים מעשיים להפיכת בית המדרש למרחב של הקשבה מיילדת וצמיחה הדדית. המשתתפים יכירו כלים מרכזיים משיטת הצמצום ויתנסו ביישום שלהם ככלי עבודה חיוניים בבית המדרש במימדים השונים של הצמצום- בין המורה לתלמיד, בין הלומדים ובין התלמיד לטקסט הנלמד.
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-title">מפגשי ביבליותרפיה לאיתור וחיזוק משאבי חוסן</div>
+                        <div class="service-subtitle">הנחיה משותפת עם נעמה ישראלי</div>
+                        <div class="service-description justified-text">
+                            במציאות רווית אתגרים ומשברים, הטקסט מספק עוגן יציב ומקור כוח להתמודדות, במיוחד בהקשר הישראלי אחרי 7/10. במפגשים נשתמש בכלים של ביבליותרפיה קבוצתית תוך עבודה עם טקסטים יהודיים וישראליים. ניעזר בכוחם של טקסטים לשמש כעוגן נפשי, לעורר משאבי חוסן פנימיים, ולהעניק משמעות מחדשת גם בתוך קושי ומשבר.
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-title">העלאת הניצוץ</div>
+                        <div class="service-subtitle">הכוח המיילד של טקסטים</div>
+                        <div class="service-description justified-text">
+                            הרצאה המציגה את הגישה הייחודית לטקסטים כמחוללי התחדשות אישית וקהילתית. ההרצאה משלבת תובנות תיאורטיות עם התנסות חווייתית, ומעניקה למשתתפים כלים וכיוונים ליישום במרחב העבודה שלהם.
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-title">במעגלי טקסט</div>
+                        <div class="service-subtitle">סדנת פיתוח לאנשי חינוך ומנחי קבוצות</div>
+                        <div class="service-description justified-text">
+                            סדנה מורחבת (6 מפגשים) המיועדת לאנשי חינוך, מנחי קבוצות ומובילי קהילות הרוצים להתנסות בעבודה טרנספורמטיבית עם טקסטים. נחקור יחד את חמשת התפקידים המרכזיים של טקסטים בקבוצה: ככלי לחיזוק זהות משותפת, יצירת מפגש משמעותי, גישור בין קצוות, בניית חוסן והנעת התחדשות. המשתתפים ירכשו כלים מעשיים ויתנסו בהנחיית 'מעגלי טקסט' טרנספורמטיביים.
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-title">הפקת ספר מכונן לארגון ולקהילה</div>
+                        <div class="service-subtitle"></div>
+                        <div class="service-description justified-text">
+                            ליווי מלא בתהליך יצירת ספר שמגבש את המאמרים, הרעיונות והטקסטים המכוננים של הארגון לכדי ספר שמשקף את הרוח והערכים הייחודיים שלו. התוצאה: מסמך שמחזק זהות ארגונית ומשמש כלי לחינוך והשראה.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="contact-section">
+                    <div class="contact-title">פרטי קשר</div>
+                    <div class="contact-info-text">
+                        <span class="contact-phone">טלפון: 052-7430426</span><span class="contact-divider">|</span>
+                        <span class="contact-email">אימייל: shimon1israeli@gmail.com</span><span class="contact-divider">|</span>
+                        <span class="contact-location">נתיבות</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId, button) {
+            // הסרת active מכל הכפתורים
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // הוספת active לכפתור הנוכחי
+            button.classList.add('active');
+            
+            // גלילה לסקשן
+            const section = document.getElementById(sectionId);
+            const offsetTop = section.offsetTop - 120;
+            
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+            
+            // הוספת visibility לסקשן
+            setTimeout(() => {
+                section.classList.add('visible');
+            }, 200);
+        }
+        
+        // Intersection Observer לאנימציות
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // צפייה בכל הסקשנים
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // עדכון כפתור הניווט הפעיל בגלילה
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navButtons = document.querySelectorAll('.nav-btn');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navButtons.forEach((button, index) => {
+                button.classList.remove('active');
+                const sectionIds = ['about-me', 'why-texts', 'services', 'contact'];
+                if (sectionIds[index] === currentSection) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
